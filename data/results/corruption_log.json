@@ -1,0 +1,120 @@
+{
+  "baseline_rows": 24,
+  "corrupted_rows": 21,
+  "selection": "published descending, then paper_id ascending",
+  "operations": [
+    {
+      "type": "drop_latest_records",
+      "count": 5,
+      "paper_ids": [
+        "10.1145/3637528.3671812",
+        "10.1145/3637528.3671808",
+        "10.1145/3637528.3671804",
+        "10.1145/3637528.3671807",
+        "10.1145/3637528.3671802"
+      ],
+      "fraction_of_baseline": 0.20833333333333334
+    },
+    {
+      "type": "blank_summary",
+      "count": 3,
+      "changes": [
+        {
+          "paper_id": "10.1145/3637528.3671824",
+          "original_summary_chars": 262
+        },
+        {
+          "paper_id": "10.1145/3637528.3671820",
+          "original_summary_chars": 271
+        },
+        {
+          "paper_id": "10.1145/3637528.3671815",
+          "original_summary_chars": 284
+        }
+      ]
+    },
+    {
+      "type": "inject_noise",
+      "count": 3,
+      "changes": [
+        {
+          "paper_id": "10.1145/3637528.3671821",
+          "injected_text": "[NOISE: @@@###!!!???]"
+        },
+        {
+          "paper_id": "10.1145/3637528.3671817",
+          "injected_text": "[NOISE: @@@###!!!???]"
+        },
+        {
+          "paper_id": "10.1145/3637528.3671801",
+          "injected_text": "[NOISE: @@@###!!!???]"
+        }
+      ]
+    },
+    {
+      "type": "truncate_title",
+      "count": 3,
+      "changes": [
+        {
+          "paper_id": "10.1145/3637528.3671821",
+          "before": "Advanced Perspectives on Chunking Strategies for Technical Documentation Retrieval",
+          "after": "Advance"
+        },
+        {
+          "paper_id": "10.1145/3637528.3671817",
+          "before": "Advanced Perspectives on Evaluating Retrieval Precision with Token F1 and LLM Judges",
+          "after": "Advance"
+        },
+        {
+          "paper_id": "10.1145/3637528.3671801",
+          "before": "Agentic Retrieval-Augmented Generation for Knowledge-Intensive Tasks",
+          "after": "Agentic"
+        }
+      ]
+    },
+    {
+      "type": "stale_date",
+      "count": 6,
+      "changes": [
+        {
+          "paper_id": "10.1145/3637528.3671824",
+          "before": "2026-06-12",
+          "after": "2025-09-25"
+        },
+        {
+          "paper_id": "10.1145/3637528.3671820",
+          "before": "2026-06-08",
+          "after": "2025-09-25"
+        },
+        {
+          "paper_id": "10.1145/3637528.3671815",
+          "before": "2026-06-03",
+          "after": "2025-09-25"
+        },
+        {
+          "paper_id": "10.1145/3637528.3671801",
+          "before": "2026-05-20",
+          "after": "2025-09-25"
+        },
+        {
+          "paper_id": "10.1145/3637528.3671806",
+          "before": "2026-05-02",
+          "after": "2025-09-25"
+        },
+        {
+          "paper_id": "10.1145/3637528.3671805",
+          "before": "2026-03-28",
+          "after": "2025-09-25"
+        }
+      ]
+    },
+    {
+      "type": "duplicate_rows",
+      "count": 2,
+      "paper_ids": [
+        "10.1145/3637528.3671822",
+        "10.1145/3637528.3671813"
+      ]
+    }
+  ]
+}
